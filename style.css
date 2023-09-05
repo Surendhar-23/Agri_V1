@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(25, 24, 24, 0.451),
+      rgba(25, 24, 24, 0.451)
+    ),
+    url(img/countryside-2326787_1920.jpg);
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.text {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 100px auto;
+  max-width: 1180px;
+}
+.text p {
+  width: 100%;
+}
+
+.mainbtns {
+  /* width: 50%; */
+  /* margin: 200px auto; */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1fb231;
+  color: #fff;
+  padding: 15px 30px;
+  max-width: 250px;
+  width: 300px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  box-shadow: 0 0 10px #00000048;
+}
+.btn:hover {
+  background-color: #21922e;
+  transform: translateY(-5px);
+}

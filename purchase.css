@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 100vh;
+  background: url(img/countryside-2326787_1920.jpg);
+  padding: 10px 20px;
+}
+.logo {
+  width: 100px;
+}
+.logo img {
+  width: 100%;
+}
