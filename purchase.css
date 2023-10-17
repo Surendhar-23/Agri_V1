@@ -3,14 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
+body {
   height: 100vh;
   background: url(img/countryside-2326787_1920.jpg);
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
-.logo {
+.main-header {
+  background-color: aliceblue;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  font-size: 1.6rem;
+  z-index: 0;
+}
+
+nav .logo {
   width: 100px;
 }
 .logo img {
   width: 100%;
+}
+
+.search-box {
+  display: inline-block;
+  width: 500px;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  padding-left: 3rem;
+  flex-shrink: 2;
+  /* padding: 20px; */
 }

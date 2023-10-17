@@ -1,0 +1,19 @@
+.pre-loader-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5eff1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.pre-loader-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+}
+.pre-loader-container img {
+  width: 25rem;
+}

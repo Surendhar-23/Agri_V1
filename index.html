@@ -18,6 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Preloader CSS  -->
+    <link rel="stylesheet" href="preloader.css" />
   </head>
   <body>
     <header>
@@ -30,5 +33,18 @@
         <a href="#" class="btn">Bidding</a>
       </div>
     </header>
+
+    <!-- PreLoader -->
+    <div class="pre-loader-container">
+      <div>
+        <img src="./img/output-onlinegiftools.gif" alt="" />
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var el = document.querySelector(".pre-loader-container");
+        el.style.display = "none";
+      };
+    </script>
   </body>
 </html>
