@@ -10,31 +10,19 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
+      integrity="sha512-UV9ujyMxyYubOSkCa8+OGzknJ1EilA19WPimPseyMcZaGIoO8l7iNphD0Mq/0R/lNkzBH70ai3tmurxAW0M2ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
     <!-- Preloader CSS  -->
     <link rel="stylesheet" href="preloader.css" />
   </head>
   <body>
-    <header class="main-header">
-      <nav>
-        <div class="logo"><img src="img/logo.png" alt="" /></div>
-
-        <div class="search-box-container">
-          <i class="bx bx-search-alt-2"></i>
-          <input
-            type="text"
-            placeholder="Search for Products"
-            class="search-box"
-          />
-        </div>
-
-        <div class="login-option"><a href="./login.html">Login</a></div>
-        <div class="cart-container">
-          <i class="bx bx-cart"></i><span>Cart</span>
-        </div>
-      </nav>
-    </header>
-
     <!-- PreLoader -->
     <div class="pre-loader-container">
       <div>
@@ -47,5 +35,215 @@
         el.style.display = "none";
       };
     </script>
+
+    <header class="main-header">
+      <nav class="nav1">
+        <div class="logo"><img src="img/logo.png" alt="" /></div>
+        <div class="search-box-container">
+          <i class="bx bx-search-alt-2"></i>
+          <input
+            type="text"
+            placeholder="Search for Products"
+            class="search-box"
+          />
+        </div>
+        <h3 class="username"></h3>
+        <div class="login-option"><a href="./login.html">Login</a></div>
+        <div class="cart-container">
+          <i class="bx bx-cart"></i><span>Cart</span>
+        </div>
+      </nav>
+
+      <nav class="subnav">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Products</a></li>
+          <li><a>Orders</a></li>
+          <li><a>Rewards</a></li>
+          <li><a>Settings</a></li>
+          <li><a>About us</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="slider-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Project 1 -->
+            <div class="swiper-slide">
+              <div class="project project1">
+                <img
+                  src="./img/agriculture-1807581_1920.jpg"
+                  alt=""
+                  class="projectsimg"
+                />
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="swiper-slide">
+              <div class="project project2">
+                <img
+                  src="./img/countryside-2326787_1920.jpg"
+                  alt=""
+                  class="projectsimg"
+                />
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="swiper-slide">
+              <div class="project project1">
+                <img
+                  src="./img/cows-2641195_1920.jpg"
+                  alt=""
+                  class="projectsimg"
+                />
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="swiper-slide">
+              <div class="project project1">
+                <img
+                  src="./img/james-baltz-YbBWmI4hZys-unsplash.jpg"
+                  alt=""
+                  class="projectsimg"
+                />
+              </div>
+            </div>
+            <!-- ... -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+          <!-- <div class="swiper-scrollbar"></div>-->
+        </div>
+      </div>
+      <!-- Hero OverLay Container -->
+      <main class="herooverlay-containers">
+        <div class="herooverlay-box herooverlay-box1">
+          <div class="heroverlaybox-container">
+            <h3 class="herooverlay-box-title">Up to 60% off | On Seeds</h3>
+            <div class="herooverlay-minibox">
+              <img src="img/seeds/seed1.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/seeds/seed2.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/seeds/seed3.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/seeds/seed4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="herooverlay-box herooverlay-box2">
+          <div class="heroverlaybox-container">
+            <h3 class="herooverlay-box-title">Up to 50% off | On Fertilizer</h3>
+            <div class="herooverlay-minibox">
+              <img src="img/fertilizers/fertilizer1.webp" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/fertilizers/fertilizer2.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/fertilizers/fertilizer3.webp" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/fertilizers/fertilizer4.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="herooverlay-box herooverlay-box3">
+          <div class="heroverlaybox-container">
+            <h3 class="herooverlay-box-title">
+              Up to 30% off | On Farm Equipments
+            </h3>
+            <div class="herooverlay-minibox">
+              <img src="img/farmequipments/farmequipment1.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/farmequipments/farmequipment2.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/farmequipments/farmequipment3.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/farmequipments/farmequipment4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="herooverlay-box herooverlay-box4">
+          <div class="heroverlaybox-container">
+            <h3 class="herooverlay-box-title">Up to 45% off | On Weeders</h3>
+            <div class="herooverlay-minibox">
+              <img src="img/weeder/weeder1.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/weeder/weeder2.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/weeder/weeder3.jpg" alt="" />
+            </div>
+            <div class="herooverlay-minibox">
+              <img src="img/weeder/weeder4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="categories">
+      <h1>Categories</h1>
+      <div class="category category1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          doloremque facilis iusto, ut harum pariatur quasi, possimus est
+          necessitatibus quidem et beatae, vero accusantium cumque sunt fugiat
+          tempore. Reiciendis id tempore impedit illum quos in voluptate
+          eligendi optio consequatur labore amet sint excepturi atque ullam,
+          veritatis laboriosam deserunt. Eum, iste!
+        </p>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"
+      integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      // projects
+      let swiperprojects = new Swiper(".swiper", {
+        cssMode: true,
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+        // effect: flip,
+        // flipEffect: {
+        //   slideShadows: false,
+        // },
+        speed: 300,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        // mousewheel: true,
+      });
+    </script>
+    <script src="purchase.js"></script>
   </body>
 </html>

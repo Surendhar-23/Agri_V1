@@ -27,6 +27,19 @@
     <link rel="stylesheet" href="preloader.css" />
   </head>
   <body>
+    <!-- PreLoader -->
+    <div class="pre-loader-container">
+      <div>
+        <img src="./img/output-onlinegiftools.gif" alt="" />
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var el = document.querySelector(".pre-loader-container");
+        el.style.display = "none";
+      };
+    </script>
+
     <section class="login-section">
       <div class="login-container">
         <div class="login-header">
@@ -38,15 +51,20 @@
 
           <div class="login-title">Log in</div>
         </div>
-        <form action="">
+        <form action="" onsubmit="" class="login_form">
           <div class="inputfield-container">
             <div class="icon"><i class="bx bx-user"></i></div>
-            <input type="text" placeholder="userid, Email or Phone Number" />
+            <input
+              type="text"
+              placeholder="userid, Email or Phone Number"
+              class="userid"
+            />
           </div>
           <div class="inputfield-container">
             <div class="icon"><i class="bx bx-lock"></i></div>
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" class="pwd" />
           </div>
+          <p class="login-msg"></p>
           <input class="login-btn" type="submit" value="Log in" />
         </form>
         <div class="other-login-container">
@@ -63,18 +81,6 @@
         </div>
       </div>
     </section>
-
-    <!-- PreLoader -->
-    <div class="pre-loader-container">
-      <div>
-        <img src="./img/output-onlinegiftools.gif" alt="" />
-      </div>
-    </div>
-    <script>
-      window.onload = function () {
-        var el = document.querySelector(".pre-loader-container");
-        el.style.display = "none";
-      };
-    </script>
+    <script src="login.js"></script>
   </body>
 </html>

@@ -26,6 +26,19 @@
     <link rel="stylesheet" href="preloader.css" />
   </head>
   <body>
+    <!-- PreLoader -->
+    <div class="pre-loader-container">
+      <div>
+        <img src="./img/output-onlinegiftools.gif" alt="" />
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var el = document.querySelector(".pre-loader-container");
+        el.style.display = "none";
+      };
+    </script>
+
     <section class="login-section">
       <div class="login-container">
         <div class="login-header">
@@ -37,22 +50,38 @@
 
           <div class="login-title">Sign Up</div>
         </div>
-        <form action="">
+        <form
+          action="/login.html"
+          onsubmit="alert('Signup Successfully..!')"
+          class="signup_form"
+        >
           <div class="inputfield-container">
             <div class="icon"><i class="bx bx-user"></i></div>
-            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Your Name" class="name" />
           </div>
           <div class="inputfield-container">
             <div class="icon"><i class="bx bx-mobile-alt"></i></div>
-            <input type="tel" name="" id="" placeholder="Mobile Number" />
+            <input
+              type="tel"
+              name=""
+              id=""
+              placeholder="Mobile Number"
+              class="phno"
+            />
           </div>
           <div class="inputfield-container">
             <div class="icon"><i class="bx bx-envelope"></i></div>
-            <input type="email" name="" id="" placeholder="Email" />
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Email"
+              class="email"
+            />
           </div>
           <div class="inputfield-container">
             <div class="icon"><i class="bx bx-lock"></i></div>
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" class="pwd" />
           </div>
           <input class="login-btn" type="submit" value="Sign Up" />
         </form>
@@ -69,18 +98,6 @@
         </div>
       </div>
     </section>
-
-    <!-- PreLoader -->
-    <div class="pre-loader-container">
-      <div>
-        <img src="./img/output-onlinegiftools.gif" alt="" />
-      </div>
-    </div>
-    <script>
-      window.onload = function () {
-        var el = document.querySelector(".pre-loader-container");
-        el.style.display = "none";
-      };
-    </script>
+    <script src="signup.js"></script>
   </body>
 </html>
